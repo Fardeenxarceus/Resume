@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+.shadow-inline {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3), -2px -4px 4px rgba(0, 0, 0, 0.3);
+}
+body {
+  background: linear-gradient(to right, #37465e, #063a3d);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#cityInput {
+  background-color: rgb(230, 245, 251);
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  width: 85%;
+  border-radius: 15px;
+  color: black;
+}
+#cityInput::placeholder {
+  color: black;
+  font-size: 20px;
+}
+.redius {
+  border-radius: 15px;
+}
+#getWeatherBtn {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(230, 245, 251);
+  border: none;
+  outline: none;
+  color: black;
+}
+#humidityPercent {
+  line-height: 10px;
+}
+#humidityLabel {
+  line-clamp: 1;
+}

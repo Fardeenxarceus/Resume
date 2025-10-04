@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Meta's -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body class="text-white">
+    <div class="container text-center mt-4">
+      <h1 class="mb-4"><i class="fas fa-cloud-sun me-2"></i> Weather App</h1>
+      <div
+        class="row d-flex justify-content-center align-items-center"
+        style="height: 60vh"
+      >
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="shadow-inline py-3 px-2 bg-white redius">
+            <form id="weatherForm">
+              <div class="d-flex mt-1">
+                <input
+                  type="text"
+                  id="cityInput"
+                  placeholder="Enter Your Location"
+                  class="mx-2"
+                  required
+                />
+                <button id="getWeatherBtn" class="rounded-circle" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+            <div id="weatherResult" class="mt-4 d-none">
+              <!-- Weather results will be displayed here -->
+              <img
+                src="./assets/cloud.png"
+                alt="Weather img"
+                width="50%"
+                class="mb-3"
+              />
+              <div
+                class="d-flex text-dark justify-content-center align-items-center flex-column"
+              >
+                <h2 class="fs-1 temperature">
+                  <sup class="ms-0">4&#176;C</sup>
+                </h2>
+                <h2 class="description">Cloudy</h2>
+              </div>
+              <div class="d-flex justify-content-between text-dark mt-4 px-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-droplet display-4"></i>
+                  <div class="d-flex flex-column align-items-center">
+                    <p class="humidityPercent fw-bold mb-0">78%</p>
+                    <p class="fw-bold humidityLabel mb-0">Humidity</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-wind display-4"></i>
+                  <div class="d-flex flex-column align-items-center">
+                    <p class="windSpeed fw-bold mb-0">12Km/h</p>
+                    <p class="fw-bold mb-0">Wind Speed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <!-- JQuery Link -->
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
