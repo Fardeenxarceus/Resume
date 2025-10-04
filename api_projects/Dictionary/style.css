@@ -1,0 +1,45 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.shadow-inline {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3), -2px -4px 4px rgba(0, 0, 0, 0.3);
+}
+img {
+  mix-blend-mode: darken;
+  color: white;
+  width: 100px;
+}
+header {
+  background: linear-gradient(135deg, #ccc 0%, #764ba27a 100%);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-bottom: 50px;
+}
+#search-input {
+  border-radius: 40px 0px 0px 40px;
+  padding: 20px;
+  text-indent: 10px;
+}
+#search-input:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  outline: none;
+}
+#search-form button {
+  border-radius: 0px 40px 40px 0px;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form img {
+  width: 50px;
+  filter: invert(1);
+}
